@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Calculator</title>
+</head>
+<body>
+	<div class="calculator">
+
+		<div class="header">
+			<input type="text" placeholder="0" class="account" readonly>
+			<input type="text" placeholder="0" class="result" readonly>
+		</div>
+
+		<div class="main">
+			<button onclick = "clean()" class="btnOperation">C</button>
+			<button onclick = "back()" class="btnOperation"><</button>
+			<button onclick = "inputOperator('%')" class="btnOperation">%</button>
+			<button onclick = "inputOperator('/')" class="btnOperation">/</button>
+			<button onclick = "input('7')" class="btnDigit">7</button>
+			<button onclick = "input('8')" class="btnDigit">8</button>
+			<button onclick = "input('9')" class="btnDigit">9</button>
+			<button onclick = "inputOperator('*')" class="btnOperation">*</button>
+			<button onclick = "input('4')" class="btnDigit">4</button>
+			<button onclick = "input('5')" class="btnDigit">5</button>
+			<button onclick = "input('6')" class="btnDigit">6</button>
+			<button onclick = "inputOperator('-')" class="btnOperation">-</button>
+			<button onclick = "input('1')" class="btnDigit">1</button>
+			<button onclick = "input('2')" class="btnDigit">2</button>
+			<button onclick = "input('3')"class="btnDigit">3</button>
+			<button onclick = "inputOperator('+')" class="btnOperation">+</button>
+			<button onclick = "inputZero()" class="btnDigit">0</button>
+			<button onclick = "inputDot('.')" class="btnDigit">.</button>
+			<button onclick = "equal()" class="btnExactly">=</button>
+			
+		</div>
+	</div>
+	        <script src="js.js"></script>
+</body>
+</html>
